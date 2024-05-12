@@ -1,5 +1,96 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #f0f4f8;
+}
 
+h1,
+h2,
+h3 {
+  color: #333;
+}
 
+nav {
+  background-color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #6e0303;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.home-container {
+  padding: 20px;
+}
+
+.movie-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.movie-item h3 {
+  color: #520244;
+  margin-top: 0;
+}
+
+.movie-item p {
+  color: #b714bd;
+  font-size: 14px;
+}
+
+.add-movie-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: 20px auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.add-movie-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-movie-container label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.add-movie-container input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.add-movie-container button {
+  background-color: #700707;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.add-movie-container button:hover {
+  background-color: #60036d;
+}
