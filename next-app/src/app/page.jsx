@@ -2,6 +2,7 @@ import { sql } from "@vercel/postgres" ;
 
 export default async function Home() {
   const movies = await sql`SELECT * FROM movies`;
+console.log(movies);
 
   return (
     <div className="home-container">
